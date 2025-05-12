@@ -1,0 +1,83 @@
+:root {
+  /* Light theme (default) */
+  --bg-primary: #f8f9fa;
+  --bg-secondary: #ffffff;
+  --text-primary: #212529;
+  --text-secondary: #495057;
+  --border-color: #dee2e6;
+  --accent-color: #0d6efd;
+  --accent-hover: #0b5ed7;
+  --accent-light: #e7f1ff;
+  --error-color: #dc3545;
+  --success-color: #198754;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --header-bg: #ffffff;
+  --toast-bg: rgba(25, 135, 84, 0.9);
+  --toast-text: white;
+}
+
+body.dark-theme {
+  /* Dark theme */
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --text-primary: #e9ecef;
+  --text-secondary: #adb5bd;
+  --border-color: #343a40;
+  --accent-color: #0d6efd;
+  --accent-hover: #0a58ca;
+  --accent-light: #031633;
+  --error-color: #dc3545;
+  --success-color: #198754;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --header-bg: #1e1e1e;
+  --toast-bg: rgba(25, 135, 84, 0.9);
+  --toast-text: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+  }
+}
